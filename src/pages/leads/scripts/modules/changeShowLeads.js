@@ -24,7 +24,7 @@ export const changeShowLeads = (leadsSort) => {
 
     item.addEventListener('drop', async (e) => {
       e.preventDefault();
-      const token = localStorage.getItem(token);
+      const token = localStorage.getItem('token');
       const num = e.dataTransfer.getData('num');
       const leadName = e.dataTransfer.getData('leadName');
       const hash = e.dataTransfer.getData('hash');
